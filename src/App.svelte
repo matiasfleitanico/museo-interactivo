@@ -7,4 +7,7 @@
   <Route path="/">
     <SubApp />
   </Route>
+  <Route path="/hola">
+    <SubApp />
+  </Route>
 </Router>
