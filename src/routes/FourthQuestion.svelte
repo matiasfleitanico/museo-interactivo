@@ -451,24 +451,6 @@
 					</div>
 				{/each}
 			</div>
-			<div class="consigna">
-				<div class="content">
-					<p on:click={firstFocus}>
-						1. Estos colores son conocidos como: Colores
-						<input id="first" bind:value={response_1} maxlength="9" class="text__1" type="text" />
-					</p>
-					<p on:click={secondFocus}>
-						2. La luz blanca y la luz que llega del son contiene todos los
-						<input id="second" bind:value={response_2} maxlength="7" class="text__1" type="text" />
-					</p>
-					<p on:click={thirdFocus}>
-						3. Los tres colores que perciben nuestros ojos, a través de los receptores, son el azul,
-						el
-						<input id="third" bind:value={response_3} maxlength="5" class="text__1" type="text" />
-						y el rojo
-					</p>
-				</div>
-			</div>
 		</div>
 	</div>
 	<!-- {/if} -->
