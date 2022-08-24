@@ -21,16 +21,14 @@
       <div class="pic" />
       <div class="sign">
         <h6>
-          <b>
-            Al alumbrar un objeto con una linterna,<br />¿Qué se puede ver en la
-            pared que se encuentra detrás de él?</b
-          >
+          <b>1) Acerca de: DIBUJO CON SOMBRAS.</b> <br>  
+          Al alumbrar un objeto con una linterna,<br />¿Qué se puede ver en la
+          pared que se encuentra detrás de él?
         </h6>
       </div>
       <button on:click={error}>La luz de la linterna </button>
       <button on:click={error}>La sombra que produce el objeto</button>
-      <button on:click={success}>Ambas
-	</button>
+      <button on:click={success}>Ambas </button>
     </div>
   {/if}
 </section>

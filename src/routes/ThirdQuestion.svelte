@@ -76,7 +76,9 @@
 		<div class="landing">
 			<div class="pic" />
 			<div class="sign">
-				<h3>Teoría del color de la luz</h3>
+				<h3>3) Acerca de: TEORÍA DEL COLOR DE LA LUZ. <br>
+					Crucigrama:
+					</h3>
 				<div class="game">
 					<div on:click={firstFocus} style={exact_1 ? "border: 1px solid green;" : ""} class="box__1">
 						<span>1</span> <h3>{response_1_letters[0]}</h3>

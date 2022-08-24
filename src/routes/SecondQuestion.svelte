@@ -19,8 +19,14 @@
   {:else}
     <div class="landing">
       <div class="pic" />
-      <div class="sign"><h6>¿Qué elementos se utilizaron para realizar el experimento de separación
-		de los componentes?</h6></div>
+      <div class="sign">
+        <h6>
+          2) Acerca de: CROMATOGRAFÍA.<br />
+          Seleccioná la imagen correcta:
+          <br /> ¿Qué elementos se utilizaron para realizar el experimento de separación
+          de los componentes?
+        </h6>
+      </div>
       <div class="image">
         <button class="image--1" on:click={success}>
           <div class="img_1" />
@@ -60,7 +66,7 @@
     align-self: center;
     justify-self: center;
     width: 80%;
-    height: 150px;
+    height: auto;
     left: 38px;
     bottom: 529px;
 
@@ -73,12 +79,12 @@
   h6 {
     font-style: normal;
     font-weight: 600;
-    font-size: medium;
+    font-size: small;
     line-height: 25px;
     text-align: center;
     color: black;
     margin: 0;
-	padding: 15px 30px;
+    padding: 15px 30px;
   }
   .image {
     display: grid;
@@ -111,14 +117,14 @@
   }
   .image--1 {
     grid-area: image_1;
-	padding: 10px;
+    padding: 10px;
   }
   .image--2 {
     grid-area: image_2;
-	padding: 10px;
+    padding: 10px;
   }
   .image--3 {
     grid-area: image_3;
-	padding: 10px;
+    padding: 10px;
   }
 </style>
