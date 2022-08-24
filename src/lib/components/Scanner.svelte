@@ -108,6 +108,7 @@
 	.scanner {
 		width: 100%;
 		max-width: 500px;
+		margin: 15px;
 	}
 
 	.scanner--hidden {

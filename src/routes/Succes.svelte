@@ -26,8 +26,8 @@ import Transition from './Transition.svelte';
 			<div class="pic" />
 			<div class="sign">
 				<div style={opacity ? "opacity:1;" : "opacity:0"} class="circle"><BigIcon icon_text={'check_small'} /></div>
-				<h1>Excelent!</h1>
-				<h3>This is the way</h3>
+				<h1>¡Felicitaciones!</h1>
+				<h3>Sigue demostrando tus conocimientos</h3>
 			</div>
 			<button on:click={handleAdvanced}>
 				<div style="position: relative;">
@@ -74,7 +74,7 @@ import Transition from './Transition.svelte';
 		font-style: normal;
 		font-weight: 400;
 		font-size: 24px;
-		line-height: 48px;
+		line-height: 25px;
 		text-align: center;
 		color: black;
 		margin: 0;

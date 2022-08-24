@@ -76,7 +76,7 @@
 		<div class="landing">
 			<div class="pic" />
 			<div class="sign">
-				<h3>Question about image</h3>
+				<h3>Teoría del color de la luz</h3>
 				<div class="game">
 					<div on:click={firstFocus} style={exact_1 ? "border: 1px solid green;" : ""} class="box__1">
 						<span>1</span> <h3>{response_1_letters[0]}</h3>
@@ -131,7 +131,7 @@
 							<input id="first" bind:value={response_1} maxlength="9" class="text__1" type="text" />
 						</p>
 						<p on:click={secondFocus}>
-							2. La luz blanca y la luz que llega del son contiene todos los
+							2. La luz blanca y la luz que llega del sol contiene todos los
 							<input id="second" bind:value={response_2} maxlength="7" class="text__1" type="text" />
 						</p>
 						<p on:click={thirdFocus}>
@@ -161,7 +161,7 @@
 	}
 	.landing {
 		display: grid;
-		grid-template-rows: 50px 750px 50px;
+		grid-template-rows: 50px 700px 50px;
 		height: 100%;
 	}
 	.sign {
@@ -169,7 +169,7 @@
 		align-self: center;
 		justify-self: center;
 		width: 80%;
-		height: 750px;
+		height: 600px;
 		left: 38px;
 		bottom: 529px;
 
@@ -179,6 +179,7 @@
 		border-radius: 27px;
 		grid-template-rows: 50px 1fr 160px;
 		padding: 45px;
+		margin: 25px;
 	}
 	h3 {
 		font-style: normal;
@@ -350,9 +351,10 @@
 		border: none;
 		outline: none;
 		width: 100px;
-		font-size: medium;
+		font-size: small;
 		color: rgb(0, 149, 151);
 		text-transform:uppercase;
+		border-bottom: black 2px solid;
 	}
 	p {
 		color: black;

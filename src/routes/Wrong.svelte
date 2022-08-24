@@ -21,8 +21,8 @@
 			<div class="pic" />
 			<div class="sign">
 				<div class="circle"><BigIcon icon_text={'mood_bad'} /></div>
-				<h1>Wrong!</h1>
-				<h3>This answer was wrong</h3>
+				<h1>Incorrecto</h1>
+				<h3>Vos podés, <br>Volvé a intentar</h3>
 			</div>
 			<button on:click={handleBack}>
 				<div style="position: relative;">
@@ -74,8 +74,8 @@
 	h3 {
 		font-style: normal;
 		font-weight: 400;
-		font-size: 24px;
-		line-height: 48px;
+		font-size: x-large;
+		line-height: 25px;
 		text-align: center;
 		color: black;
 		margin: 0;

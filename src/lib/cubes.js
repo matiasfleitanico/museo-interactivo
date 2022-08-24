@@ -387,7 +387,7 @@ export var cubes = [
 	},
 	{
 		id: 'g5',
-		letter: 's',
+		letter: 'j',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -406,7 +406,7 @@ export var cubes = [
 	},
 	{
 		id: 'h2',
-		letter: 's',
+		letter: 'v',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -432,7 +432,7 @@ export var cubes = [
 	},
 	{
 		id: 'h4',
-		letter: 'p',
+		letter: 'j',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -464,7 +464,7 @@ export var cubes = [
 	},
 	{
 		id: 'i2',
-		letter: 's',
+		letter: 'b',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -490,7 +490,7 @@ export var cubes = [
 	},
 	{
 		id: 'i4',
-		letter: 'p',
+		letter: 'y',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -503,7 +503,7 @@ export var cubes = [
 	},
 	{
 		id: 'i5',
-		letter: 's',
+		letter: 'r',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -516,13 +516,13 @@ export var cubes = [
 	},
 	{
 		id: 'j1',
-		letter: 'r',
+		letter: 'g',
 		active: false,
         succes: false
 	},
 	{
 		id: 'j2',
-		letter: 's',
+		letter: 'x',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -548,7 +548,7 @@ export var cubes = [
 	},
 	{
 		id: 'j4',
-		letter: 'p',
+		letter: 's',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -574,7 +574,7 @@ export var cubes = [
 	},
 	{
 		id: 'k1',
-		letter: 'r',
+		letter: 't',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -587,7 +587,7 @@ export var cubes = [
 	},
 	{
 		id: 'k2',
-		letter: 's',
+		letter: 'n',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -613,7 +613,7 @@ export var cubes = [
 	},
 	{
 		id: 'k4',
-		letter: 'p',
+		letter: 'q',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -639,7 +639,7 @@ export var cubes = [
 	},
 	{
 		id: 'l1',
-		letter: 'r',
+		letter: 'e',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -652,7 +652,7 @@ export var cubes = [
 	},
 	{
 		id: 'l2',
-		letter: 's',
+		letter: 'a',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -678,7 +678,7 @@ export var cubes = [
 	},
 	{
 		id: 'l4',
-		letter: 'p',
+		letter: 'z',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -704,7 +704,7 @@ export var cubes = [
 	},
 	{
 		id: 'm1',
-		letter: 'r',
+		letter: 'e',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -717,7 +717,7 @@ export var cubes = [
 	},
 	{
 		id: 'm2',
-		letter: 's',
+		letter: 'a',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -743,7 +743,7 @@ export var cubes = [
 	},
 	{
 		id: 'm4',
-		letter: 'p',
+		letter: 't',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -782,7 +782,7 @@ export var cubes = [
 	},
 	{
 		id: 'n2',
-		letter: 's',
+		letter: 'n',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -808,7 +808,7 @@ export var cubes = [
 	},
 	{
 		id: 'n4',
-		letter: 'p',
+		letter: 'f',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -834,7 +834,7 @@ export var cubes = [
 	},
     {
 		id: 'o1',
-		letter: 'r',
+		letter: 'o',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -847,7 +847,7 @@ export var cubes = [
 	},
 	{
 		id: 'o2',
-		letter: 's',
+		letter: 'h',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -860,7 +860,7 @@ export var cubes = [
 	},
 	{
 		id: 'o3',
-		letter: 'a',
+		letter: 'p',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -873,7 +873,7 @@ export var cubes = [
 	},
 	{
 		id: 'o4',
-		letter: 'p',
+		letter: 'x',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -899,7 +899,7 @@ export var cubes = [
 	},
     {
 		id: 'p1',
-		letter: 'r',
+		letter: 't',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -912,7 +912,7 @@ export var cubes = [
 	},
 	{
 		id: 'p2',
-		letter: 's',
+		letter: 'd',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -925,7 +925,7 @@ export var cubes = [
 	},
 	{
 		id: 'p3',
-		letter: 'a',
+		letter: 's',
 		active: false,
 		horizontal: false,
 		vertical: false,
@@ -951,7 +951,7 @@ export var cubes = [
 	},
 	{
 		id: 'p5',
-		letter: 'a',
+		letter: 's',
 		active: false,
 		horizontal: false,
 		vertical: false,
