@@ -22,7 +22,8 @@
       </div>
       <h1>Bienvenido/a!</h1>
       <h3>¿Estás listo/a para comenzar el desafío científico?</h3>
-      <button on:click={handleClick}>Vamos</button>
+      <button on:click={handleClick}>VAMOS!</button>
+      <div class="abajo"></div>
     </div>
   {/if}
 </section>

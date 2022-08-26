@@ -21,14 +21,15 @@
       <div class="pic" />
       <div class="sign">
         <h6>
-          <b>1) Acerca de: DIBUJO CON SOMBRAS.</b> <br>  
-          Al alumbrar un objeto con una linterna,<br />¿Qué se puede ver en la
-          pared que se encuentra detrás de él?
+          <b>1) DIBUJO CON SOMBRAS.</b> <br />
+          Según el mito, la primera vez que se utilizó la sombra de un objeto para
+          dibujar su contorno fue la de:
         </h6>
       </div>
-      <button on:click={error}>La luz de la linterna </button>
-      <button on:click={error}>La sombra que produce el objeto</button>
-      <button on:click={success}>Ambas </button>
+      <button on:click={error}> El cuerpo de un gato</button>
+      <button on:click={error}>La forma de un árbol</button>
+      <button on:click={success}>El perfil de una cara</button>
+    <div style="margin-top: 150px;" class="abajo"></div>
     </div>
   {/if}
 </section>
@@ -83,7 +84,8 @@
     height: 59px;
     left: 41px;
     bottom: 159px;
-    background: #ececec;
+    color: black !important;
+    background-color: #ececec !important;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
       rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;

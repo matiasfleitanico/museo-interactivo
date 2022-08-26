@@ -16,19 +16,19 @@
   let state = 0;
 
   afterUpdate(() => {
-    if (result === "https://www.museo-interactivo.com.ar/1") {
+    if (result === "https://www.experienciamuntref.untref.edu.ar/1") {
       route = 1;
       result = "";
       state = 0;
-    } else if (result === "https://www.museo-interactivo.com.ar/2") {
+    } else if (result === "https://www.experienciamuntref.untref.edu.ar/2") {
       route = 2;
       result = "";
       state = 0;
-    } else if (result === "https://www.museo-interactivo.com.ar/3") {
+    } else if (result === "https://www.experienciamuntref.untref.edu.ar/3") {
       route = 3;
       result = "";
       state = 0;
-    } else if (result === "https://www.museo-interactivo.com.ar/4") {
+    } else if (result === "https://www.experienciamuntref.untref.edu.ar/4") {
       route = 4;
       result = "";
       state = 0;
@@ -84,12 +84,14 @@
       handleBack={() => {
         state = 0;
       }}
+      bind:route={route}
     />
   {:else if state === 2}
     <Succes
       handleAdvanced={() => {
         state = 3;
       }}
+            bind:route={route}
     />
   {:else if state === 3}
     <Index route={route + 1} bind:result />

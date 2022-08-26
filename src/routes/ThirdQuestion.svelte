@@ -76,14 +76,14 @@
 		<div class="landing">
 			<div class="pic" />
 			<div class="sign">
-				<h3>3) Acerca de: TEORÍA DEL COLOR DE LA LUZ. <br>
+				<h3>3) TEORÍA DEL COLOR DE LA LUZ. <br>
 					Crucigrama:
 					</h3>
 				<div class="game">
 					<div on:click={firstFocus} style={exact_1 ? "border: 1px solid green;" : ""} class="box__1">
-						<span>1</span> <h3>{response_1_letters[0]}</h3>
+						<span>2</span> <h3>{response_1_letters[0]}</h3>
 					</div>
-					<div on:click={secondFocus} style={exact_2 ? "border: 1px solid green;" : ""} class="box__2"><h3>{response_2_letters[0]}</h3></div>
+					<div on:click={secondFocus} style={exact_2 ? "border: 1px solid green;" : ""} class="box__2"><span>3</span><h3>{response_2_letters[0]}</h3></div>
 					<div on:click={firstFocus} style={exact_1 ? "border: 1px solid green;" : ""} class="box__3"><h3>{response_1_letters[1]}</h3></div>
 					<div  on:click={secondFocus} style={exact_2 ? "border: 1px solid green;" : ""} class="box__4"><h3>{response_2_letters[1]}</h3></div>
 					<div on:click={firstFocus} style={exact_1 ? "border: 1px solid green;" : ""} class="box__5"><h3>{response_1_letters[2]}</h3></div>
@@ -92,7 +92,7 @@
 					<div on:click={secondFocus} style={exact_2 ? "border: 1px solid green;" : ""} class="box__8"><h3>{response_2_letters[3]}</h3></div>
 					<div style={exact_1 ? "border: 1px solid green;" : ""} class="box__9"><h3>{response_1_letters[4]}</h3></div>
 					<div  on:click={secondFocus} style={exact_2 ? "border: 1px solid green;" : ""} class="box__10"><h3>{response_2_letters[4]}</h3></div>
-					<div on:click={thirdFocus} style={exact_3 ? "border: 1px solid green;" : ""} class="box__11"><h3>{response_3_letters[0]}</h3></div>
+					<div on:click={thirdFocus} style={exact_3 ? "border: 1px solid green;" : ""} class="box__11"><span>1</span><h3>{response_3_letters[0]}</h3></div>
 					<div on:click={thirdFocus} style={exact_3 ? "border: 1px solid green;" : ""} class="box__12"><h3>{response_3_letters[1]}</h3></div>
 					<div on:click={thirdFocus} style={exact_3 || exact_1 ? "border: 1px solid green;" : ""} class="box__13">
 						<h3>
@@ -128,23 +128,24 @@
 				</div>
 				<div class="consigna">
 					<div class="content">
-						<p on:click={firstFocus}>
-							1. Estos colores son conocidos como: Colores
-							<input id="first" bind:value={response_1} maxlength="9" class="text__1" type="text" />
-						</p>
-						<p on:click={secondFocus}>
-							2. La luz blanca y la luz que llega del sol contiene todos los
-							<input id="second" bind:value={response_2} maxlength="7" class="text__1" type="text" />
-						</p>
 						<p on:click={thirdFocus}>
-							3. Los tres colores que perciben nuestros ojos, a través de los receptores, son el
+							1. Los tres colores que perciben nuestros ojos, a través de los receptores, son el
 							azul, el
 							<input id="third" bind:value={response_3} maxlength="5" class="text__1" type="text" />
 							y el rojo
 						</p>
+						<p on:click={firstFocus}>
+							2. Estos colores son conocidos como: Colores
+							<input id="first" bind:value={response_1} maxlength="9" class="text__1" type="text" />
+						</p>
+						<p on:click={secondFocus}>
+							3. La luz blanca y la luz que llega del sol contiene todos los
+							<input id="second" bind:value={response_2} maxlength="7" class="text__1" type="text" />
+						</p>
 					</div>
 				</div>
 			</div>
+			<div style="margin-top: 70px;" class="abajo"></div>
 		</div>
 	{/if}
 </section>

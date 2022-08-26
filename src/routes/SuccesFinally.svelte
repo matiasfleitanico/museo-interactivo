@@ -33,7 +33,7 @@
           <BigIcon icon_text={"check_small"} />
         </div>
         <h1>¡Incríble!</h1>
-        <h4>Demostraste ser un profesional de la ciencia.</h4>
+        <h4>Demostraste ser profesional de la ciencia.</h4>
         <div class="content--bar">
           <div class="progress">
             <div
@@ -49,6 +49,7 @@
           </div>
         </div>
       </div>
+      <div class="abajo"></div>
     </div>
   {/if}
 </section>

@@ -21,7 +21,7 @@
       <div class="pic" />
       <div class="sign">
         <h6>
-          2) Acerca de: CROMATOGRAFÍA.<br />
+          2) <b> CROMATOGRAFÍA. </b> <br />
           Seleccioná la imagen correcta:
           <br /> ¿Qué elementos se utilizaron para realizar el experimento de separación
           de los componentes?
@@ -40,6 +40,7 @@
         >
         <div />
       </div>
+      <div class="abajo"></div>
     </div>
   {/if}
 </section>
@@ -78,7 +79,7 @@
   }
   h6 {
     font-style: normal;
-    font-weight: 600;
+    font-weight: normal;
     font-size: small;
     line-height: 25px;
     text-align: center;

@@ -30,27 +30,12 @@ body {
   height: 100%;
 }
 
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.img_1{
+.img_1 {
   width: 100%;
   height: 100%;
   background-image: url("../public/img/1.jpeg");
@@ -60,7 +45,7 @@ button:focus-visible {
   border-radius: 25px;
 }
 
-.img_2{
+.img_2 {
   width: 100%;
   height: 100%;
   background-image: url("../public/img/2.jpeg");
@@ -70,7 +55,7 @@ button:focus-visible {
   border-radius: 25px;
 }
 
-.img_3{
+.img_3 {
   width: 100%;
   height: 100%;
   background-image: url("../public/img/3.jpeg");
@@ -80,11 +65,21 @@ button:focus-visible {
   border-radius: 25px;
 }
 
+.abajo {
+  width: 100%;
+  height: 50px;
+  background-image: url("../public/img/abajo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  border-radius: 25px;
+}
+
 .logo {
   width: 50%;
   height: 100%;
   background-image: url("../public/img/tecno.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: 150%;
 }

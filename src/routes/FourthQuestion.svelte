@@ -431,10 +431,14 @@
   <div class="landing">
     <div class="pic" />
     <div class="sign">
+      <div>
       <h3>
-        4) Acerca de: CURVATURA DE LA TIERRA <br />
-        Sopa de letras con palabras relacionadas al experimento:
+        4) <b> CURVATURA DE LA TIERRA </b> <br />
+        Resolvé esta sopa de letras y encontrá las siguientes palabras:
       </h3>
+      <p style="margin-top: 20px;"> plana - curvatura - Tierra - circunferencia
+      </p>
+    </div>
       <div class="game">
         {#each cubes as cube}
           <div
@@ -498,12 +502,12 @@
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
       rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     border-radius: 27px;
-    grid-template-rows: 130px 1fr 160px;
+    grid-template-rows: 150px 1fr 160px;
     padding: 45px;
   }
   h3 {
     font-style: normal;
-    font-weight: 600;
+    font-weight: normal;
     font-size: 20px;
     line-height: auto;
     text-align: center;
