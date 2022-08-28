@@ -9,5 +9,6 @@
     span {
         font-size: 120px;
         font-weight: 500;
+        color: white!important;
     }
 </style>

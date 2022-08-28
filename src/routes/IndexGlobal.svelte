@@ -19,7 +19,7 @@
 
 </main>
 
-<Footer />
+<Footer bind:route />
 
 
 <style>

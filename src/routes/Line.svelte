@@ -98,5 +98,6 @@
     font-size: 24px;
     line-height: 29px;
     border: none;
+    color: black!important;
   }
 </style>

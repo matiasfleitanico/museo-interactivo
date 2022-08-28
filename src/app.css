@@ -5,7 +5,6 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
   font-synthesis: none;
@@ -82,4 +81,7 @@ button:focus-visible {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 150%;
+}
+button{
+  color: black!important;
 }

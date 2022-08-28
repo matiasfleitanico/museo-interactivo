@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
   import { afterUpdate } from "svelte";
-  import { Router, Link, Route } from "svelte-routing";
+  import { useLocation, useNavigate } from "svelte-navigator";
   import Index from "./routes/IndexGlobal.svelte";
   import Wrong from "./routes/Wrong.svelte";
   import FirstQuestion from "./routes/FirstQuestion.svelte";
@@ -10,92 +10,111 @@
   import ThirdQuestion from "./routes/ThirdQuestion.svelte";
   import FourthQuestion from "./routes/FourthQuestion.svelte";
   import SuccesFinally from "./routes/SuccesFinally.svelte";
+  import { route, state } from "./lib/stores"
 
+  let location = useLocation();
+  let navigate = useNavigate();
   let result = "";
-  let route = 0;
-  let state = 0;
 
   afterUpdate(() => {
-    if (result === "https://www.experienciamuntref.untref.edu.ar/1") {
-      route = 1;
+    console.log($location);
+
+    if (
+      result === "https://www.experienciamuntref.untref.edu.ar/1" ||
+      $location.pathname === "/1"
+    ) {
+      navigate("/");
+      $route = 1;
       result = "";
-      state = 0;
-    } else if (result === "https://www.experienciamuntref.untref.edu.ar/2") {
-      route = 2;
+      $state = 0;
+    } else if (
+      result === "https://www.experienciamuntref.untref.edu.ar/2" ||
+      $location.pathname === "/2"
+    ) {
+      navigate("/");
+      $route = 2;
       result = "";
-      state = 0;
-    } else if (result === "https://www.experienciamuntref.untref.edu.ar/3") {
-      route = 3;
+      $state = 0;
+    } else if (
+      result === "https://www.experienciamuntref.untref.edu.ar/3" ||
+      $location.pathname === "/3"
+    ) {
+      navigate("/");
+      $route = 3;
       result = "";
-      state = 0;
-    } else if (result === "https://www.experienciamuntref.untref.edu.ar/4") {
-      route = 4;
+      $state = 0;
+    } else if (
+      result === "https://www.experienciamuntref.untref.edu.ar/4" ||
+      $location.pathname === "/4"
+    ) {
+      navigate("/");
+      $route = 4;
       result = "";
-      state = 0;
+      $state = 0;
     } else if (result.length > 4) {
-      route = 0;
+      $route = 0;
       result = "";
-      state = 0;
+      $state = 0;
     }
   });
 </script>
 
 <section>
-  {#if state === 0}
-    {#if route === 0}
+  {#if $state === 0}
+    {#if $route === 0}
       <Line
         handleClick={() => {
-          state = 3;
+          $state = 3;
         }}
       />
-    {:else if route === 1}
+    {:else if $route === 1}
       <FirstQuestion
         error={() => {
-          state = 1;
+          $state = 1;
         }}
         success={() => {
-          state = 2;
+          $state = 2;
         }}
       />
-    {:else if route === 2}
+    {:else if $route === 2}
       <SecondQuestion
         error={() => {
-          state = 1;
+          $state = 1;
         }}
         success={() => {
-          state = 2;
+          $state = 2;
         }}
       />
-    {:else if route === 3}
+    {:else if $route === 3}
       <ThirdQuestion
         success={() => {
-          state = 2;
+          $state = 2;
         }}
       />
-    {:else if route === 4}
+    {:else if $route === 4}
       <FourthQuestion
         success={() => {
-          state = 4;
+          $state = 4;
         }}
       />
     {/if}
-  {:else if state === 1}
+  {:else if $state === 1}
     <Wrong
       handleBack={() => {
-        state = 0;
+        $state = 0;
       }}
-      bind:route={route}
+      bind:route={$route}
     />
-  {:else if state === 2}
+  {:else if $state === 2}
     <Succes
       handleAdvanced={() => {
-        state = 3;
+        $state = 3;
       }}
-            bind:route={route}
+      bind:route={$route}
     />
-  {:else if state === 3}
-    <Index route={route + 1} bind:result />
-  {:else if state === 4}
+  {:else if $state === 3}
+    <Index route={$route + 1} bind:result />
+  {:else if $state === 4}
     <SuccesFinally />
   {/if}
 </section>

@@ -35,7 +35,7 @@
         <h1>Incorrecto</h1>
         <h3>{text}</h3>
       </div>
-      <button on:click={handleBack}>
+      <button class="button--back" on:click={handleBack}>
         <div style="position: relative;">
           <span class="material-symbols-outlined"> arrow_back </span>
           Volver a intentar
@@ -123,7 +123,9 @@
     font-size: 24px;
     line-height: 29px;
     border: none;
-    color: white;
+  }
+  .button--back{
+    color: white!important;;
   }
   span {
     position: absolute;
