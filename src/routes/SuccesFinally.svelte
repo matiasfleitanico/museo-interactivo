@@ -7,6 +7,7 @@
   let opacity = false;
   let bar = false;
   let bar_color = false;
+  let step = 1;
 
   onMount(() => {
     setTimeout(() => {
@@ -25,7 +26,7 @@
 <section>
   {#if charge}
     <Transition />
-  {:else}
+  {:else if step === 1}
     <div class="landing">
       <div class="pic" />
       <div class="sign">
@@ -48,9 +49,34 @@
             />
           </div>
         </div>
+        <button
+          on:click={() => {
+            step = 2;
+          }}>CONTINUAR</button
+        >
       </div>
-      <div class="abajo"></div>
+      <div style="margin-top: 50px;" class="abajo" />
     </div>
+  {:else}
+    <div class="final">
+      <h1 class="h_final">Gracias por sumarte a la experiencia!</h1>
+
+      <h2 class="h_final">Esperamos que la hayas disfrutado.</h2>
+
+      <div class="icon_final">
+        <span class="material-symbols-outlined"> science </span>
+        <span class="material-symbols-outlined"> sports_esports </span>
+      </div>
+
+      <h2 class="h_final">Te invitamos a seguir recorriendo la exposición,</h2>
+
+      <h2 class="h_final">al final tenemos una propuesta más para vos!</h2>
+
+      
+      <div style="margin-top: 50px;" class="abajo" />
+    </div>
+
+    <div />
   {/if}
 </section>
 
@@ -74,7 +100,7 @@
     align-items: center;
     justify-content: center;
     width: 80%;
-    height: 450px;
+    height: 550px;
     left: 38px;
     bottom: 529px;
 
@@ -84,7 +110,7 @@
       rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     border-radius: 27px;
     margin-bottom: 50px;
-    grid-template-rows: 220px 70px 50px;
+    grid-template-rows: 220px 70px 50px 110px 50px;
   }
   h4 {
     font-style: normal;
@@ -121,7 +147,7 @@
     font-size: 24px;
     line-height: 29px;
     border: none;
-    color: white;
+    color: white !important;
   }
   .circle {
     transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -166,5 +192,40 @@
       rgba(136, 3, 180, 1) 100%
     );
     transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  } 
+
+  .final {
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(255, 138, 0);
+    background: linear-gradient(
+      16deg,
+      rgba(255, 138, 0, 1) 0%,
+      rgba(166, 0, 255, 1) 49%,
+      rgba(35, 137, 208, 1) 85%
+    );
+    height: 100%;
+    color: white;
   }
+  .h_final {
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  .icon_final {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+  }
+
+  .material-symbols-outlined{
+    font-size: 3rem;
+  }
+  
 </style>
