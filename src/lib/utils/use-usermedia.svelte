@@ -8,7 +8,6 @@
 		mounted = true;
 
 		return () => {
-			console.log('stop Component destroyed');
 
 			// stopMedia();
 		};
@@ -26,8 +25,6 @@
 	}
 
 	function setStatus(params: string) {
-		console.log(`Setting status ${params}`);
-
 		$status = params;
 	}
 
@@ -37,12 +34,10 @@
 		$status = 'stopped';
 
 		function setError(params: string) {
-			console.log('Setting erro');
 			$error = params;
 		}
 
 		function setStream(params: MediaStream) {
-			console.log(`Setting stream`, { params });
 			$stream = params;
 		}
 
@@ -71,15 +66,12 @@
 	};
 
 	function stopMedia(): void {
-		console.log('stopping media stream');
 
 		if (isMediaStream($stream)) {
 			$stream.getTracks().forEach((track) => {
 				track.stop();
 				$stream.removeTrack(track);
 			});
-
-			console.log({ streams: $stream });
 
 			setStatus('stopped');
 		}

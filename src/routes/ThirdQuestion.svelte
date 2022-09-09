@@ -17,17 +17,14 @@
 
 	function firstFocus() {
 		document.getElementById("first").focus();
-		console.log(document.getElementById("first"))
 	}
 
 	function secondFocus() {
 		document.getElementById("second").focus();
-		console.log(document.getElementById("first"))
 	}
 
 	function thirdFocus() {
 		document.getElementById("third").focus();
-		console.log(document.getElementById("third"))
 	}
 
 	onMount(() => {

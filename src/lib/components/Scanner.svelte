@@ -28,7 +28,6 @@
 		({ stopMediaStream, startMediaStream } = useUserMedia());
 
 		return () => {
-			console.log('Component destroyed');
 			stopMediaStream();
 			video.srcObject = null;
 		};
@@ -49,7 +48,6 @@
 		const qrCode = jsQR(imageData.data, width, height);
 
 		if (qrCode === null) {
-			console.log('timeout');
 			setTimeout(startCapturing, 750);
 		} else {
 			result = qrCode.data;
@@ -60,7 +58,6 @@
 	};
 
 	const handleCanPlay = (): void => {
-		console.log('canplay');
 		if (canvas === null || canvas === null || video === null || video === null) {
 			return;
 		}
@@ -76,7 +73,6 @@
 	};
 
 	$: if ($status === 'resolved' && video !== null && $stream) {
-		console.log('Resolve, stream');
 		video.srcObject = $stream;
 		video.play().catch(console.error);
 	}
@@ -84,9 +80,6 @@
 	$: if (active && $status === 'stopped' && startMediaStream) {
 		startMediaStream();
 	}
-	afterUpdate(()=> {
-		console.log(result)
-	})
 </script>
 
 <UserMedia bind:useUserMedia />

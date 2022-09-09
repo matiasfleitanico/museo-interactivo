@@ -61,17 +61,14 @@
 
   function firstFocus() {
     document.getElementById("first").focus();
-    console.log(document.getElementById("first"));
   }
 
   function secondFocus() {
     document.getElementById("second").focus();
-    console.log(document.getElementById("first"));
   }
 
   function thirdFocus() {
     document.getElementById("third").focus();
-    console.log(document.getElementById("third"));
   }
 
   onMount(() => {
@@ -503,7 +500,7 @@
       rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     border-radius: 27px;
     grid-template-rows: 150px 1fr 160px;
-    padding: 45px;
+    padding: 25px;
   }
   h3 {
     font-style: normal;
@@ -537,15 +534,6 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  .text__1 {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    width: 100px;
-    font-size: medium;
-    color: rgb(0, 149, 151);
-    text-transform: uppercase;
   }
   p {
     color: black;
